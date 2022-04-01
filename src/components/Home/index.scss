@@ -16,29 +16,6 @@
         font-family: 'Coolvetica';
         font-weight: 400;
 
-        &::before {
-            content: '<h1>';
-            font-family: 'La Belle Aurore';
-            color: #ffd700;
-            font-size: 18px;
-            position: absolute;
-            margin-top: -40px;
-            left: 15px;
-            opacity: 0.6;
-        }
-
-        &::after {
-            content: '<h1/>';
-            font-family: 'La Belle Aurore';
-            color: #ffd700;
-            font-size: 18px;
-            position: absolute;
-            margin-top: -18px;
-            margin-left: 20px;
-            animation: fadeIn 1s 1.7s backwards;
-            opacity: 0.6;
-        }
-
         img {
             width: 32px;
             opacity: 0;
@@ -46,6 +23,15 @@
             animation: rotateIn 1s linear both;
             animation-delay: 1.4s;
         }
+    }
+    .personal-img {
+        position: absolute;
+        z-index: -1;
+        height: 500px;
+        left: 50%;
+        top: 10%;
+        margin: auto;
+        filter: grayscale(100%);
     }
 
     h2 {
@@ -55,7 +41,7 @@
         font-size: 11px;
         font-family: sans-serif;
         letter-spacing: 3px;
-        animation: fadeIn 1s 1.8s backwards;
+        animation: fadeIn 2.5s 3s backwards;
     }
 
     .flat-button {

@@ -3,8 +3,8 @@ import { useState, useEffect } from 'react';
 import LogoS from '../../assets/images/logo-s.png'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters';
-import Logo from './Logo'
 import Loader from 'react-loaders';
+import Image from '../../assets/images/IMG_0681.jpg'
 
 const Home = () => {
 
@@ -13,7 +13,7 @@ const Home = () => {
         'u', 'c', 'c', 'e', 's', 's', ' ', 
         'i','s',' ','n','o','t','h','i','n','g',
         ' ','s','h','o','r','t',' ','o','f',' ','a',
-         ' ','b','l','e','s','s','i','n','g','.' 
+        ' ','b','l','e','s','s','i','n','g','.' 
     ];
     const nameArray = [
         '-', 'C', 'r', 'i', 's', 't', 'i', 'a', 'n', ' ', 
@@ -23,12 +23,12 @@ const Home = () => {
     useEffect(() => {
       return setTimeout(()=> {
           setLetterClass('text-animate-hover')
-      }, 6500)
+      }, 4800)
     }, [])
     
 
     return (
-        <>
+    <>
         <div className="container home-page">
             <div className="text-zone">
                 <h1>
@@ -48,13 +48,13 @@ const Home = () => {
                 index={23}/> 
                 <br/>
                 </h1>
-                <h2>Software Engineer / JavaScript Student / Web Developer</h2>
+                <h2><strong>// New Software Engineer \\</strong><br/><br/>Rails / JavaScript / React </h2>
                 <Link to="/contact" className="flat-button">CONTACT ME</Link>
             </div>
-            <Logo/>
+            <img alt="me_and_gf"className="personal-img" src={Image}></img>
         </div>
         <Loader type='pacman'/>
-        </>
+    </>
     )
 };
 
