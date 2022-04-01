@@ -17,9 +17,10 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm('service_25qmy5h', 'template_kvmywv7', refForm.current, 'user_MENY6kZsA5Tqydch3')
+        emailjs.sendForm('service_25qmy5h', 'template_kvmywv7', refForm.current, 'MENY6kZsA5Tqydch3')
           .then(() => {
               alert("Email Sent!");
+              window.location.reload(false)
           }, (error) => {
               alert(error.text);
           });
