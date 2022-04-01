@@ -2,27 +2,27 @@ import './index.scss';
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters';
 import { useState, useRef, useEffect } from 'react';
-import emailjs from '@emailjs/browser'
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
 
-    const [letterClass, setLetterClass] = useState('text-animate')
-    const refForm = useRef()
+    const [letterClass, setLetterClass] = useState('text-animate');
+    const refForm = useRef();
     useEffect(() => {
         return setTimeout(()=> {
             setLetterClass('text-animate-hover')
         }, 3000)
-    }, [])
+    }, []);
 
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm('service_25qmy5h', 'template_kvmywv7', refForm.current, 'MENY6kZsA5Tqydch3')
+        emailjs.sendForm('gmail', 'template_kvmywv7', refForm.current, 'MENY6kZsA5Tqydch3')
           .then(() => {
               alert("Email Sent!");
               window.location.reload(false)
           }, (error) => {
-              alert(error.text);
+              alert("Something went wrong, please try again.");
           });
       };
     return (
@@ -66,7 +66,7 @@ const Contact = () => {
         </div>
         <Loader type='pacman'/>
         </>
-    )
+    );
 };
 
 export default Contact;
