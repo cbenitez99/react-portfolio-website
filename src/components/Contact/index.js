@@ -24,8 +24,32 @@ const Contact = () => {
                     index={15}/>
                 </h1>
                 <p>
-                I am interested in opportunities that will provide many project opportunities. 
+                I am interested in many freelancing opportunities, especially those
+                that provide me with continous work to improve my current skillset.
+                If you have any questions, please don't hesitate to contact me using the form below. 
                 </p>
+                <div className='contact-form'>
+                    <form>
+                        <ul>
+                            <li className='half'>
+                                <input type='text' name='name' placeholder='name' required/>
+                            </li>
+
+                            <li className='half'>
+                                <input type='email' name='email' placeholder='email' required/>
+                            </li>
+                            <li>
+                                <input placeholder="Subject" type="text" name="subject" required/>
+                            </li>
+                            <li>
+                                <textarea placeholder='Message' name='message' required/>
+                            </li>
+                            <li>
+                                <input type="submit" className="flat-button" value="SEND"/>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
             </div>
         </div>
         <Loader type='pacman'/>
