@@ -1,18 +1,29 @@
+import './index.scss';
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters';
-import { useState, useEffect } from 'react';
-import './index.scss';
+import { useState, useRef, useEffect } from 'react';
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
 
     const [letterClass, setLetterClass] = useState('text-animate')
-
+    const refForm = useRef()
     useEffect(() => {
         return setTimeout(()=> {
             setLetterClass('text-animate-hover')
         }, 3000)
     }, [])
 
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_25qmy5h', 'template_kvmywv7', refForm.current, 'user_MENY6kZsA5Tqydch3')
+          .then(() => {
+              alert("Email Sent!");
+          }, (error) => {
+              alert(error.text);
+          });
+      };
     return (
         <>
         <div className='container contact-page'>
@@ -29,17 +40,17 @@ const Contact = () => {
                 If you have any questions, please don't hesitate to contact me using the form below. 
                 </p>
                 <div className='contact-form'>
-                    <form>
+                    <form ref={refForm} onSubmit={sendEmail}>
                         <ul>
                             <li className='half'>
-                                <input type='text' name='name' placeholder='name' required/>
+                                <input type='text' name='name' placeholder='Name' required/>
                             </li>
 
                             <li className='half'>
-                                <input type='email' name='email' placeholder='email' required/>
+                                <input type='email' name='email' placeholder='Email' required/>
                             </li>
                             <li>
-                                <input placeholder="Subject" type="text" name="subject" required/>
+                                <input placeholder="Subject" type="text" name="Subject" required/>
                             </li>
                             <li>
                                 <textarea placeholder='Message' name='message' required/>
