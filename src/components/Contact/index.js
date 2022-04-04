@@ -16,15 +16,15 @@ const Contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-    
         emailjs.sendForm('gmail', 'template_kvmywv7', refForm.current, 'MENY6kZsA5Tqydch3')
-          .then(() => {
-              alert("Email Sent!");
-              window.location.reload(false)
-          }, (error) => {
-              alert("Something went wrong, please try again.");
-          });
-      };
+        .then(() => {
+            alert("Email Sent!");
+            window.location.reload(false)
+        }, (error) => {
+          alert("Something went wrong, please try again.");
+        });
+    };
+    
     return (
         <>
         <div className='container contact-page'>

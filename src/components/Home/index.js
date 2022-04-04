@@ -4,7 +4,6 @@ import LogoS from '../../assets/images/logo-s.png'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters';
 import Loader from 'react-loaders';
-import Image from '../../assets/images/IMG_0681.jpg'
 
 const Home = () => {
 
@@ -16,7 +15,7 @@ const Home = () => {
         ' ','b','l','e','s','s','i','n','g','.' 
     ];
     const nameArray = [
-        '-', 'C', 'r', 'i', 's', 't', 'i', 'a', 'n', ' ', 
+        '-', ' ', 'C', 'r', 'i', 's', 't', 'i', 'a', 'n', ' ', 
         'B', 'e', 'n', 'i', 't', 'e', 'z'
     ];
 
@@ -38,7 +37,7 @@ const Home = () => {
                     <span className={`${letterClass} _14`}>l</span>
                     <span className={`${letterClass} _15`}>o,</span> 
                     <br/>
-                <img src={LogoS} alt="logo"/>
+                <img src={LogoS} alt="logoS"/>
                 <AnimatedLetters letterClass={letterClass} 
                 strArray={wordArray} 
                 index={16}/> 
@@ -48,10 +47,9 @@ const Home = () => {
                 index={23}/> 
                 <br/>
                 </h1>
-                <h2><strong>// New Software Engineer \\</strong><br/><br/>Rails / JavaScript / React </h2>
+                <h2><strong>|| New Software Engineer ||</strong><br/><br/>Rails / JavaScript / React </h2>
                 <Link to="/contact" className="flat-button">CONTACT ME</Link>
             </div>
-            <img alt="me_and_gf"className="personal-img" src={Image}></img>
         </div>
         <Loader type='pacman'/>
     </>

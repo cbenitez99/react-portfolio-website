@@ -1,8 +1,6 @@
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters';
 import { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCss3, faGitAlt, faJsSquare, faReact, faHtml5 } from '@fortawesome/free-brands-svg-icons';
 import Loader from 'react-loaders';
 
 const About = () => {
@@ -39,27 +37,6 @@ const About = () => {
                 If I had to define myself with one word, I'd choose dedication.  
                 I always bring my <strong>A+</strong> game and I never quit.
                 </p>
-            </div>
-
-            <div className='stage-cube-cont'>
-                <div className='cubespinner'>
-                    <div className='face2'>
-                        <FontAwesomeIcon icon={faHtml5}/>
-                    </div>
-                    <div className='face3'>
-                        <FontAwesomeIcon icon={faCss3}/>
-                    </div>
-                    <div className='face4'>
-                        <FontAwesomeIcon icon={faReact}/>
-                    </div>
-                    <div className='face5'>
-                        <FontAwesomeIcon icon={faJsSquare}/>
-                    </div>
-                    <div className='face6'>
-                        <FontAwesomeIcon icon={faGitAlt}/>
-                    </div>
-                </div>
-
             </div>
         </div>
         <Loader type='pacman'/>
