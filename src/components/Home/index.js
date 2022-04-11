@@ -1,6 +1,5 @@
 import {Link} from 'react-router-dom'
 import { useState, useEffect } from 'react';
-import LogoS from '../../assets/images/logo-s.png'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters';
 import Loader from 'react-loaders';
@@ -9,15 +8,11 @@ const Home = () => {
 
     const [letterClass, setLetterClass] = useState('text-animate')
     const wordArray = [
-        'u', 'c', 'c', 'e', 's', 's', ' ', 
-        'i','s',' ','n','o','t','h','i','n','g',
-        ' ','s','h','o','r','t',' ','o','f',' ','a',
-        ' ','b','l','e','s','s','i','n','g','.' 
+        'My', ' ', 'name',' ','is', ' ' , 'Cristian', ' ', 'and', ' ', 
+        'this','','is',' ','my'
     ];
-    const nameArray = [
-        '-', ' ', 'C', 'r', 'i', 's', 't', 'i', 'a', 'n', ' ', 
-        'B', 'e', 'n', 'i', 't', 'e', 'z'
-    ];
+
+    const webPort = ['p','o','r','t','f','o','l','i','o','','w','e','b','s','i','t','e']
 
     useEffect(() => {
       return setTimeout(()=> {
@@ -31,23 +26,29 @@ const Home = () => {
         <div className="container home-page">
             <div className="text-zone">
                 <h1>
-                    <span className={letterClass}>H</span>
+                    <span className={`${letterClass}_11`}>H</span>
                     <span className={`${letterClass} _12`}>e</span>
                     <span className={`${letterClass} _13`}>l</span>
                     <span className={`${letterClass} _14`}>l</span>
-                    <span className={`${letterClass} _15`}>o,</span> 
+                    <span className={`${letterClass} _15`}>o</span> 
+                    <span className={`${letterClass} _16`}>,</span> 
+                 
                     <br/>
-                <img src={LogoS} alt="logoS"/>
                 <AnimatedLetters letterClass={letterClass} 
                 strArray={wordArray} 
-                index={16}/> 
+                index={17}/> 
                 <br/>
                 <AnimatedLetters letterClass={letterClass} 
-                strArray={nameArray}
-                index={23}/> 
+                strArray={webPort}
+                index={30}/> 
                 <br/>
                 </h1>
-                <h2><strong>|| New Software Engineer ||</strong><br/><br/>Rails / JavaScript / React </h2>
+                <h2>
+                    <h4>New Full-Stack Software Engineer with 500+ hours of practice.</h4>
+                    <strong>Studied Languages/Frameworks:</strong>
+                   <em> Ruby / JavaScript / React / Ruby on Rails</em> 
+                    <br/>
+                </h2>
                 <Link to="/contact" className="flat-button">CONTACT ME</Link>
             </div>
         </div>
