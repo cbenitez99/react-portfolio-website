@@ -1,1 +1,58 @@
-//style about page
+.container.about-page {
+    .text-zone {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 35%;
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 90%;
+
+        h1 {
+            font-size: 50px;
+            font-family: 'Coolvetica';
+            color: #7b00ff;
+            font-weight: 400;
+            margin-top: 0;
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 24px;
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: 300;
+            min-width: fit-content;
+            animation: pulse 2s;
+
+            &:nth-of-type(1) {
+                animation-delay: 1.1s;
+            }
+            &:nth-of-type(2) {
+                animation-delay: 1.2s;
+            }
+            &:nth-of-type(3) {
+                animation-delay: 1.3s;
+            }
+            &:nth-of-type(4) {
+                animation-delay: 1.4s;
+            }
+        }
+
+        button{
+            color: orange;
+            background: none!important;
+            border: none;
+            padding: 0!important;
+            font-size: 24px;
+            font-family: sans-serif;
+            font-weight: 300;
+        }
+        button:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}

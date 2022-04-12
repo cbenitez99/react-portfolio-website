@@ -36,9 +36,9 @@ const Contact = () => {
                     index={15}/>
                 </h1>
                 <p>
-                I am interested in many freelancing opportunities, especially those
+                I am interested in freelancing opportunities, especially those
                 that provide me with continous work to improve my current skillset.
-                If you have any questions, please don't hesitate to contact me using the form below. 
+                If you have any questions, please don't hesitate to contact me using the form below! 
                 </p>
                 <div className='contact-form'>
                     <form ref={refForm} onSubmit={sendEmail}>

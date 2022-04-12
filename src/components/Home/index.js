@@ -8,25 +8,23 @@ const Home = () => {
 
     const [letterClass, setLetterClass] = useState('text-animate')
     const wordArray = [
-        'My', ' ', 'name',' ','is', ' ' , 'Cristian', ' ', 'and', ' ', 
-        'this','','is',' ','my'
+        'M','y', ' ', 'n','a','m','e',' ','i','s', ' ' , 'Cristian', ' ', 'a','n','d', ' ', 
+        't','h','e','s','e',' ','a','r','e',' ','m','y',' ',
+        'a','c','h','i','e','v','e','m','e','n','t','s','.'
     ];
-
-    const webPort = ['p','o','r','t','f','o','l','i','o','','w','e','b','s','i','t','e']
 
     useEffect(() => {
       return setTimeout(()=> {
           setLetterClass('text-animate-hover')
-      }, 4800)
+      }, 4000)
     }, [])
     
-
     return (
     <>
         <div className="container home-page">
             <div className="text-zone">
                 <h1>
-                    <span className={`${letterClass}_11`}>H</span>
+                    <span className={`${letterClass} _11`}>H</span>
                     <span className={`${letterClass} _12`}>e</span>
                     <span className={`${letterClass} _13`}>l</span>
                     <span className={`${letterClass} _14`}>l</span>
@@ -36,12 +34,7 @@ const Home = () => {
                     <br/>
                 <AnimatedLetters letterClass={letterClass} 
                 strArray={wordArray} 
-                index={17}/> 
-                <br/>
-                <AnimatedLetters letterClass={letterClass} 
-                strArray={webPort}
-                index={30}/> 
-                <br/>
+                index={13}/> 
                 </h1>
                 <h2>
                     <h4>New Full-Stack Software Engineer with 500+ hours of practice.</h4>

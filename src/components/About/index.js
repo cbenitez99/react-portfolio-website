@@ -13,6 +13,10 @@ const About = () => {
         }, 3000)
     }, [])
 
+    const handleClick = () => {
+        window.open('https://www.facebook.com/tntremodelsvs')
+    }
+
     return (
         <>
         <div className='container about-page'>
@@ -29,13 +33,20 @@ const About = () => {
                 a well established company and to provide me the opportunity to work with the latest
                 technologies on challenging and diverse projects.
                 </p>
+
                 <p>
-                I'm confident in what I understand, curious to learn more, and continuously working towards
-                improving my programming abilities.
+                I've always enjoyed finishing large puzzles or building custom vehicles using Legos, 
+                but I left it all behind when I started high school. 
+                Working under a <button onClick={handleClick}>General Contractor</button> for a couple years reminded me of how much I enjoyed building something from the ground up, <em>literally</em>.
                 </p>
+
+                <p>Finding solutions to a problem, making personal connections with people, 
+                and really thinking outside the box are qualities I've attained and strive to improve.
+                </p>
+
                 <p>
                 If I had to define myself with one word, I'd choose dedication.  
-                I always bring my <strong>A+</strong> game and I never quit.
+                I always bring my <strong>A</strong> game and I never quit.
                 </p>
             </div>
         </div>

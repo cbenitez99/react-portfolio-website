@@ -11,18 +11,10 @@
 
     h1 {
         color: #fff;
-        font-size: 53px;
+        font-size: 49px;
         margin: 0;
         font-family: 'Coolvetica';
         font-weight: 400;
-
-        img {
-            width: 32px;
-            opacity: 0;
-            height: auto;
-            animation: rotateIn 1s linear both;
-            animation-delay: 1.4s;
-        }
     }
 
     h2 {
@@ -32,25 +24,25 @@
         font-size: 15px;
         font-family: sans-serif;
         letter-spacing: 3px;
-        animation: fadeIn 2.5s 3s backwards;
+        animation: fadeIn 2.5s 4s backwards;
     }
 
     .flat-button {
-        color: #ffd700;
+        color: #7b00ff;
         font-size: 13px;
         font-weight: 400;
         letter-spacing: 4px;
         font-family: sans-serif;
         text-decoration: none;
         padding: 10px 18px;
-        border: 1px solid #ffd700;
+        border: 1px solid #7b00ff;
         margin-top: 25px;
         float: left;
-        animation: fadeIn 1s 1.8s backwards;
+        animation: fadeIn 2s 4s backwards;
         white-space: nowrap;
 
         &:hover {
-            background: #ffd700;
+            background: #7b00ff;
             color: #333;
         }
     }
