@@ -1,5 +1,5 @@
 .nav-bar {
-    background: #000000;
+    background: #000001;
     width: 60px;
     height: 100%;
     position: absolute;
@@ -88,10 +88,16 @@
           content: 'CONTACT';
         }
       }
+
+      a.project-link {
+        &:after {
+          content: 'PROJECTS';
+        }
+      }
   
       a.active {
         svg {
-          color: #8547c7
+          color: #8547c7;
         }
       }
     }
@@ -112,11 +118,6 @@
           display: block;
           font-size: 15px;
           line-height: 16px;
-          color: #4d4d4e;
-  
-          &:hover {
-            color: #8547c7;
-          }
         }
       }
     }

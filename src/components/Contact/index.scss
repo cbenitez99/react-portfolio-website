@@ -55,7 +55,7 @@
         box-sizing: border-box;
     }
     textarea::placeholder,input::placeholder {
-        color: aqua;
+        color: orange;
     }
 
     .flat-button {
@@ -71,7 +71,7 @@
         &:hover {
             background: #8547c7;
             cursor: pointer;
-            color: cyan;
+            color: orange;
         }
     }
 }
