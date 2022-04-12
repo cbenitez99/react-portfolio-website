@@ -45,7 +45,7 @@ const About = () => {
                 </p>
 
                 <p>
-                If I had to define myself with one word, I'd choose dedication.  
+                If I had to define myself with a word, I'd pick dedication.  
                 I always bring my <strong>A</strong> game and I never quit.
                 </p>
             </div>

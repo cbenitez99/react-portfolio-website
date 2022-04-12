@@ -24,26 +24,27 @@
         font-size: 15px;
         font-family: sans-serif;
         letter-spacing: 3px;
-        animation: fadeIn 2.5s 4s backwards;
+        animation: fadeIn 2.5s 2.5s backwards;
     }
 
     .flat-button {
-        color: #7b00ff;
+        color: #8547c7;
         font-size: 13px;
         font-weight: 400;
         letter-spacing: 4px;
         font-family: sans-serif;
         text-decoration: none;
         padding: 10px 18px;
-        border: 1px solid #7b00ff;
+        border: 1px solid #8547c7;
         margin-top: 25px;
         float: left;
         animation: fadeIn 2s 4s backwards;
         white-space: nowrap;
+        border-radius: 4px;
 
         &:hover {
-            background: #7b00ff;
-            color: #333;
+            background: #8547c7;
+            color: cyan;
         }
     }
 }

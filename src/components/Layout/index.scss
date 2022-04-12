@@ -2,6 +2,11 @@
     width: 100%;
     height: 100%;
     position: absolute;
+    background: rgb(0,0,0);
+    background: -moz-radial-gradient(circle, rgba(0,0,0,0.9598433123249299) 46%, rgba(171,0,255,0.8337928921568627) 100%);
+    background: -webkit-radial-gradient(circle, rgba(0,0,0,0.9598433123249299) 46%, rgba(171,0,255,0.8337928921568627) 100%);
+    background: radial-gradient(circle, rgba(0,0,0,0.9598433123249299) 46%, rgba(171,0,255,0.8337928921568627) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ab00ff",GradientType=1);
 }
 
 .top-tags {
@@ -10,7 +15,7 @@
 }
 
 .tags {
-    color: #7b00ff;
+    color: #8547c7;
     opacity: 0.6;
     position: absolute;
     bottom: 0;
@@ -52,7 +57,7 @@
         h1 {
             font-size: 50px;
             font-family: 'Coolvetica';
-            color: #7b00ff;
+            color: #8547c7;
             font-weight: 400;
             margin-top: 0;
             position: relative;

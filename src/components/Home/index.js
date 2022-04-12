@@ -8,9 +8,7 @@ const Home = () => {
 
     const [letterClass, setLetterClass] = useState('text-animate')
     const wordArray = [
-        'M','y', ' ', 'n','a','m','e',' ','i','s', ' ' , 'Cristian', ' ', 'a','n','d', ' ', 
-        't','h','e','s','e',' ','a','r','e',' ','m','y',' ',
-        'a','c','h','i','e','v','e','m','e','n','t','s','.'
+        'M','y', ' ', 'n','a','m','e',' ','i','s', ' ' , 'Cristian',' ','Benitez'
     ];
 
     useEffect(() => {
