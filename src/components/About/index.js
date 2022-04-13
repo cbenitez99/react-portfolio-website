@@ -29,24 +29,19 @@ const About = () => {
                     />
                 </h1>
                 <p>
-                I'm a very ambitious Software Engineer looking for a role in
-                a well established company and to provide me the opportunity to work with the latest
-                technologies on challenging and diverse projects.
+                Working under a <button onClick={handleClick}>General Contractor</button> within the 
+                last few years made me realize how much I truly enjoy planning and building out ideas from the ground up, <em>literally</em>.
                 </p>
 
                 <p>
-                I've always enjoyed finishing large puzzles or building custom vehicles using Legos, 
-                but I left it all behind when I started high school. 
-                Working under a <button onClick={handleClick}>General Contractor</button> for a couple years reminded me of how much I enjoyed building something from the ground up, <em>literally</em>.
-                </p>
-
-                <p>Finding solutions to a problem, making personal connections with people, 
-                and really thinking outside the box are qualities I've attained and strive to improve.
+                Finding solutions to a problem, making personal connections with people, 
+                and really thinking outside the box are all qualities I've kept and continuously strive to improve.
                 </p>
 
                 <p>
-                If I had to define myself with a word, I'd pick dedication.  
-                I always bring my <strong>A</strong> game and I never quit.
+                I'm a new Software Engineer searching for a position in
+                a well established company that will provide me with ample opportunity
+                to learn more, and assist in building diverse projects using the latest technologies.
                 </p>
             </div>
         </div>
