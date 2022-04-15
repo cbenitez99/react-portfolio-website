@@ -13,6 +13,10 @@ const Project = () => {
         }, 3000)
     }, [])
 
+    const handleClick = () => {
+        window.open('https://github.com/cbenitez99/mini-pokedex-app')
+    }
+
     return (
         <>
         <div className='container project-page'>
@@ -21,9 +25,11 @@ const Project = () => {
                     <AnimatedLetters
                     letterClass={letterClass}
                     strArray={['M','y',' ','P','r','o','j','e','c','t','s']}
-                    index={15}
-                    />
+                    index={15}/>
                 </h1>
+                <p>
+                    <button onClick={handleClick}>Mini Pokedex</button>
+                </p>
             </div>
         </div>
         <Loader type='pacman'/>

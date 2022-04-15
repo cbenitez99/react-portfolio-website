@@ -35,7 +35,7 @@ const About = () => {
 
                 <p>
                 Finding solutions to a problem, making personal connections with people, 
-                and really thinking outside the box are all qualities I've kept and continuously strive to improve.
+                and really thinking outside the box are all qualities I've kept, and continuously strive to improve.
                 </p>
 
                 <p>

@@ -40,6 +40,19 @@
                 animation-delay: 1.4s;
             }
         }
+        button{
+            color: orange;
+            background: none!important;
+            border: none;
+            padding: 0!important;
+            font-size: 24px;
+            font-family: sans-serif;
+            font-weight: 300;
+        }
+        button:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
     }
     .text-animate-hover {
         &:hover {
