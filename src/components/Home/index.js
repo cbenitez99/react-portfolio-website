@@ -44,7 +44,7 @@ const Home = () => {
                     <br/>
                 </h2>
                 <Link to="/about" className="flat-button2">ABOUT</Link>
-                <Link to="/project" className="flat-button2">PROJECTS</Link>
+                <Link to="/project" className="flat-button2">MY CODE</Link>
                 <Link to="/contact" className="flat-button">CONTACT ME</Link>
             </div>
         </div>
