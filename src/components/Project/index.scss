@@ -60,8 +60,17 @@
         }
     }
 
-    img {
-        height: 200px;
-        width: auto;
+    .image-zone {
+        z-index: -1;
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        max-height: 80%;
+        
+        img{
+            display: flex;
+            height: 300px;
+            max-width: 550px;
+        }
     }
 }
