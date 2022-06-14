@@ -4,6 +4,9 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters';
 import Loader from 'react-loaders';
 import pfp from '../../assets/images/IMG_1889.JPG'
+import About from '../About';
+import Project from '../Project';
+import Contact from '../Contact';
 
 const Home = () => {
 
@@ -46,6 +49,15 @@ const Home = () => {
                 <Link to="/about" className="flat-button2">ABOUT</Link>
                 <Link to="/projects" className="flat-button2">MY CODE</Link>
                 <Link to="/contact" className="flat-button">CONTACT ME</Link>
+            </div>
+            <div className='scroll-about'>
+                <About/>
+            </div>
+            <div className='scroll-project'>
+                <Project/>
+            </div>
+            <div className='scroll-contact'>
+                <Contact/>
             </div>
         </div>
         <Loader type='pacman'/>

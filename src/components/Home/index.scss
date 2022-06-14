@@ -81,4 +81,16 @@
             color: orange;
         }
     }
+
+    .scroll-page {
+       position: absolute;
+       left: 104px;
+       top: 100%;
+       transform: translateY(-50%);
+       width: 40%;
+       max-height: 90%;
+       
+    }
+
+
 }
