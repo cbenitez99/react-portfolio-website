@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom'
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters';
 import Loader from 'react-loaders';
@@ -9,6 +9,20 @@ import Project from '../Project';
 import Contact from '../Contact';
 
 const Home = () => {
+    const aboutSection = useRef(null);
+    const projectSection = useRef(null);
+    const contactSection = useRef(null);
+
+    const goToAboutSection = () => {
+
+    }
+    const goToContactSection = () => {
+        
+    }
+    const goToProjectSection = () => {
+        
+    }
+
 
     const [letterClass, setLetterClass] = useState('text-animate')
     const wordArray = [
@@ -50,13 +64,13 @@ const Home = () => {
                 <Link to="/projects" className="flat-button2">MY CODE</Link>
                 <Link to="/contact" className="flat-button">CONTACT ME</Link>
             </div>
-            <div className='scroll-about'>
+            <div ref={aboutSection} className='scroll-about'>
                 <About/>
             </div>
-            <div className='scroll-project'>
+            <div ref={projectSection} className='scroll-project'>
                 <Project/>
             </div>
-            <div className='scroll-contact'>
+            <div ref={contactSection} className='scroll-contact'>
                 <Contact/>
             </div>
         </div>

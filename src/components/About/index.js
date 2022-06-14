@@ -45,7 +45,7 @@ const About = () => {
                 </p>
             </div>
         </div>
-        <Loader type='pacman'/>
+        {/* <Loader type='pacman'/> */}
         </>
     )
 }
