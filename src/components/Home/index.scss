@@ -82,7 +82,7 @@
         }
     }
 
-    .scroll-page {
+    .scroll-about {
        position: absolute;
        left: 104px;
        top: 100%;
@@ -91,6 +91,24 @@
        max-height: 90%;
        
     }
+    .scroll-project {
+        position: absolute;
+        left: 104px;
+        top: 100%;
+        transform: translateY(-50%);
+        width: 40%;
+        max-height: 90%;
+        
+     }
+     .scroll-contact {
+        position: absolute;
+        left: 104px;
+        top: 100%;
+        transform: translateY(-50%);
+        width: 40%;
+        max-height: 90%;
+        
+     }
 
 
 }
