@@ -13,9 +13,11 @@ const Home = () => {
     const projectSection = useRef(null);
     const contactSection = useRef(null);
 
-    const goToAboutSection = () => {
-
-    }
+    const goToAboutSection = () => 
+        window.scrollTo({    
+        top: aboutSection.current.offSetTop,
+        behavior: "smooth"
+    });
     const goToContactSection = () => {
         
     }
