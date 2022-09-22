@@ -4,9 +4,9 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters';
 import Loader from 'react-loaders';
 import pfp from '../../assets/images/IMG_1889.JPG';
-import About from '../About';
-import Project from '../Project';
-import Contact from '../Contact';
+// import About from '../About';
+// import Project from '../Project';
+// import Contact from '../Contact';
 
  
 const Home = () => {
