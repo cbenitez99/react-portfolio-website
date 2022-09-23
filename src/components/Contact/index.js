@@ -36,8 +36,8 @@ const Contact = () => {
                     index={15}/>
                 </h1>
                 <p>
-                I am interested in freelancing opportunities, especially those
-                that provide me with continous work to improve my current skillset.
+                I am interested in both full time employment or contract freelancing. I'm always looking
+                for opportunities that help me improve my current skillset.
                 If you have any questions, please don't hesitate to contact me using the form below! 
                 </p>
                 <div className='contact-form'>

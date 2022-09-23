@@ -29,19 +29,18 @@ const About = () => {
                     />
                 </h1>
                 <p>
-                Working under a <button onClick={handleClick}>General Contractor</button> within the 
-                last few years made me realize how much I truly enjoy planning and building out ideas from the ground up, <em>literally</em>.
+                Working as a contractor for the 
+                last few years, I realized how much I enjoy planning and building out ideas from the ground up.
                 </p>
 
                 <p>
                 Finding solutions to a problem, making personal connections with people, 
-                and really thinking outside the box are all qualities I've kept, and continuously strive to improve.
+                and delivering on my commitments are all qualities I've developed, though I continuously 
+                strive to improve.
                 </p>
 
                 <p>
-                I'm a new Software Engineer searching for a position in
-                a well established company that will provide me with ample opportunity
-                to learn more, and assist in building diverse projects using the latest technologies.
+                I'm a Software Engineer searching for my next project to build, while always looking to learn more!
                 </p>
             </div>
         </div>

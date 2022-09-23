@@ -41,10 +41,10 @@ const Home = () => {
                 index={13}/> 
                 </h1>
                 <h2>
-                    <strong>New Full-Stack Software Engineer with 500+ hours of practice.</strong>
+                    <strong>Full-Stack Software Engineer</strong>
                     <br/><br/>
-                    <strong>Studied Languages/Frameworks:</strong>
-                    <em> Ruby / JavaScript / React / Ruby on Rails</em> 
+                    <strong>Languages/Frameworks:</strong>
+                    <em> React / Javascript / Typescript / Ruby on Rails </em> 
                     <br/>
                 </h2>
                 <Link to="/about" className="flat-button2">ABOUT</Link>
