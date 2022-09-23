@@ -13,10 +13,6 @@ const About = () => {
         }, 3000)
     }, [])
 
-    const handleClick = () => {
-        window.open('https://www.facebook.com/tntremodelsvs')
-    }
-
     return (
         <>
         <div className='container about-page'>
@@ -40,11 +36,11 @@ const About = () => {
                 </p>
 
                 <p>
-                I'm a Software Engineer searching for my next project to build, while always looking to learn more!
+                I'm a Software Engineer searching for my next project to build, while always looking to learn more.
                 </p>
             </div>
         </div>
-        {/* <Loader type='pacman'/> */}
+        <Loader type='pacman'/>
         </>
     )
 }
