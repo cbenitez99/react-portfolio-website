@@ -38,8 +38,12 @@ const Project = () => {
                     strArray={['M','y',' ','P','r','o','j','e','c','t','s']}
                     index={15}/>
                 </h1>
-                <div className='image-zone'>
-                    <img alt='my-github' src={github}></img>
+                <div className='project-zone'>
+                    <p>Project 1</p>
+                    <p>Project 2</p>
+                    <p>Project 3</p>
+
+                    {/* <img alt='my-github' src={github}></img> */}
                     {/* <p>
                         <button onClick={handleClick}>Mini Pokedex App</button> :
                         <br/> 
