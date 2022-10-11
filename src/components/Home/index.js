@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters';
 import Loader from 'react-loaders';
-import pfp from '../../assets/images/IMG_1889.JPG';
 // import About from '../About';
 // import Project from '../Project';
 // import Contact from '../Contact';
@@ -23,12 +22,10 @@ const Home = () => {
     }, [])
     
     return (
-    <>
+    // <>
         <div className="container home-page">
-        <img src={pfp} id="post-img" alt="cristian-b"/>
             <div className="text-zone">
                 <h1>
-                    <img src={pfp} id="post-img" alt="cristian-b"/>
                     <span className={`${letterClass} _11`}>H</span>
                     <span className={`${letterClass} _12`}>e</span>
                     <span className={`${letterClass} _13`}>l</span>
@@ -48,8 +45,8 @@ const Home = () => {
                     <br/>
                 </h2>
                 <Link to="/about" className="flat-button2">ABOUT</Link>
-                <Link to="/projects" className="flat-button2">MY CODE</Link>
-                <Link to="/contact" className="flat-button">CONTACT ME</Link>
+                <Link to="/projects" className="flat-button2">MY-PROJECTS</Link>
+                <Link to="/contact" className="flat-button">CONTACT-ME</Link>
             </div>
             {/* <div className='scroll-about'>
                 <About/>
@@ -60,9 +57,9 @@ const Home = () => {
             <div className='scroll-contact'>
                 <Contact/>
             </div> */}
+                    <Loader type='pacman'/>
+
         </div>
-        <Loader type='pacman'/>
-    </>
     )
 };
 
