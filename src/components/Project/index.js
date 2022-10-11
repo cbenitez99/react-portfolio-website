@@ -3,6 +3,12 @@ import AnimatedLetters from '../AnimatedLetters';
 import { useState, useEffect } from 'react';
 import Loader from 'react-loaders';
 import github from '../../assets/images/Screen Shot 2022-09-22 at 8.30.09 PM.png'
+import miniPokedex from '../../assets/images/Screen Shot 2022-09-22 at 8.30.09 PM.png'
+import gameReviewer from '../../assets/images/Screen Shot 2022-09-22 at 8.30.09 PM.png'
+import lolSpellMaker from '../../assets/images/Screen Shot 2022-09-22 at 8.30.09 PM.png'
+import memeGenerator from '../../assets/images/Screen Shot 2022-09-22 at 8.30.09 PM.png'
+
+
 
 
 const Project = () => {
@@ -34,11 +40,10 @@ const Project = () => {
                 </h1>
                 <div className='project-zone'>
                     <p><img onClick={handleClick}alt='my-github' src={github}/></p>
-                    <p><img alt='my-github' src={github}/></p>
-                    <p><img alt='my-github' src={github}/></p> 
-                    <p><img alt='my-github' src={github}/></p> 
-                    <p><img alt='my-github' src={github}/></p> 
-                    <p><img alt='my-github' src={github}/></p> 
+                    <p><img alt='my-github' src={miniPokedex}/></p>
+                    <p><img alt='my-github' src={gameReviewer}/></p> 
+                    <p><img alt='my-github' src={lolSpellMaker}/></p> 
+                    <p><img alt='my-github' src={memeGenerator}/></p> 
 
 
                     {/* <img alt='my-github' src={github}></img> */}
