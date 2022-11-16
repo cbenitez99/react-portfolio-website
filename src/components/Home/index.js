@@ -22,7 +22,7 @@ const Home = () => {
     }, [])
     
     return (
-    // <>
+    <>
         <div className="container home-page">
             <div className="text-zone">
                 <h1>
@@ -57,9 +57,11 @@ const Home = () => {
             <div className='scroll-contact'>
                 <Contact/>
             </div> */}
-                    <Loader type='pacman'/>
 
         </div>
+        <Loader type='pacman'/>
+
+    </>
     )
 };
 
